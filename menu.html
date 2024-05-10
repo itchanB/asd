@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <title>Pan de Special</title>
+      <link rel="stylesheet" type="text/css" href="css/menu.css">
+      <link rel="shortcut icon" type="image/logo" href="css/img/shortcut_logo-fotor.png">
+    </head>
+    <body>
+      <div class="Menu-header">
+        <div class="Menu">
+          <nav class="navbar navbar-expand-lg bg-secondary" >
+            <div class="container-fluid"> 
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="logo">
+                    <a href="homed.html" class="nav-link"><img src="css/img/logo.png" style="width: 120px;"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="homed.html" style="margin-top: 4px;">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active" aria-current="page" href="#" style="margin-top: 4px; color: white;"><b>Menu</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="margin-top: 4px;">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="margin-top: 4px;">Contact</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                          <a class="nav-link disabled" href="" style="margin-top: 4px;">Promo</a>
+                        </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="survey.html" style="margin-top: 4px;">Survey</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb" style="margin-top: 20px;">
+          <li class="breadcrumb-item"><a href="homed.html" style="text-decoration: none;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Menu</li>
+          <li class="breadcrumb-item active" aria-current="page">Category: All</li>     
+        </ul>   
+      </nav>   
+
+      <h4 style="margin-left: 1%;">Category</h4>
+        <select class="form-select form-select-sm" aria-label="Small select example" id="categorySelect" onchange="redirectToPage()" style="width: auto; margin-left: 1%;">
+          <option value="">All</option>
+          <option value="category/cat_pandesal.html">Pandesal</option>
+          <option value="category/cat-loaf.html">Loaf Breads</option>
+          <option value="category/cat-spreads.html">Spreads</option>
+      </select>
+
+              <!-- <div class="column">
+                <div class="col"><a href="#">4</a></div>
+                <div class="col"><a href="#">3</a></div>
+                <div class="col"><a href="#">2</a></div>
+                <div class="col"><a href="#">1</a></div> 
+              </div>
+              <select class="form-select" aria-label="Default select example" style="width: auto; float: right; top: 15px;">
+                <option selected>12</option>
+                <option value="1">24</option>
+                <option value="2">36</option>
+                <option value="3">ALL</option>
+              </select>
+              <p class="Show" style="width: auto; float: right; margin: 0% 1% 0% 0%; top: 7px; position: relative;">Show:</p> -->
+      <div class="menu" id="menu">
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/banana-loaf.html">
+              <img src="css/img/banana-loaf.jpg" alt="banana loaf bread">
+            </a>
+            <div class="desc" id="desc">Banana Loaf Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/bigpandesal.html">
+              <img src="css/img/big-pandesal.jpg" alt="big pandesal">
+            </a>
+            <div class="desc" id="desc">Big Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/cheeseloaf.html">
+              <img src="css/img/cheese-loaf.jpg" alt="cheese loaf bread">
+            </a>
+            <div class="desc" id="desc">Cheese Loaf Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/cheeseandesal.html">
+              <img src="css/img/cheespandesal.png" alt="cheese_pandesal">
+            </a>
+            <div class="desc" id="desc">Cheese Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/chocoloafbread.html">
+              <img src="css/img/cloadbread.png" alt="choco-loaf">
+            </a>
+            <div class="desc" id="desc">Choco Loaf Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/chocopandesal.html">
+              <img src="css/img/choco-pandesal1.png" alt="choco_pandesal">
+            </a>
+            <div class="desc" id="desc">Choco Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/chocospread.html">
+              <img src="css/img/choco.png" alt="choco_spread">
+            </a>
+            <div class="desc"  id="desc">Chocolate Spread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/cinnamonpandesal.html">
+              <img src="css/img/cinnamon-pandesal.jpg" alt="cinnamon pandesal">
+            </a>
+            <div class="desc"  id="desc">Cinnamon Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/classicloafbread.html">
+              <img src="css/img/loafbread.png" alt="loaf_bread">
+            </a>
+            <div class="desc" id="desc">Classic Loaf Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/cocojam.html">
+              <img src="css/img/cocojam.png" alt="cocojam_spread">
+            </a>
+            <div class="desc" id="desc">CocoJam Spread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/frenchbread.html">
+              <img src="css/img/frenchbread.png" alt="french_bread">
+            </a>
+            <div class="desc" id="desc">French Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/malunggaypandesal.html">
+              <img src="css/img/malunggay-pandesal1.png" alt="malunggay-pandesal1">
+            </a>
+            <div class="desc" id="desc">Malunggay Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/pandanpandesal.html">
+              <img src="css/img/pandan-pandesal.png" alt="pandan-pandesal">
+            </a>
+            <div class="desc" id="desc">Pandan Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/pandesal.html">
+              <img src="css/img/pandesal.png" alt="pandesal">
+            </a>
+            <div class="desc" id="desc">Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/peanutspread.html">
+              <img src="css/img/peanut_butter.png" alt="pb_spread">
+            </a>
+            <div class="desc" id="desc">Peanut Butter Spread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/plainlaofbread.html">
+              <img src="css/img/plain-loafbread.png" alt="plain_loafbread">
+            </a>
+            <div class="desc" id="desc">Plain Loaf Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/raisinlaofbread.html">
+              <img src="css/img/raisinbread.png" alt="raisin_loafbread">
+            </a>
+            <div class="desc" id="desc">Raisin Loaf Bread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/strawberry.html">
+              <img src="css/img/strawberry.png" alt="pb_spread">
+            </a>
+            <div class="desc" id="desc">Strawberry Spread</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/sardinescornoil.html">
+              <img src="css/img/sardines-cornoil.jpg" alt="sardines in corn oil">
+            </a>
+            <div class="desc" id="desc">Sardines In Corn Oil</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/sardinescornoil.html">
+              <img src="css/img/sardines-oliveoil.jpg" alt="sardines in olive oil">
+            </a>
+            <div class="desc" id="desc">Sardines In Olive Oil</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/sardinestomato.html">
+              <img src="css/img/sardines-tomato.jpg" alt="sardines in tomato sauce">
+            </a>
+            <div class="desc" id="desc">Sardines In Tomato Sauce</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/tuyocornoil.html">
+              <img src="css/img/tuyo-cornoil.jpg" alt="tuyo in corn oil">
+            </a>
+            <div class="desc" id="desc">Tuyo In Corn Oil</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/ubepandesal.html">
+              <img src="css/img/ubepandesal1.png" alt="ube_pandesal">
+            </a>
+            <div class="desc" id="desc">Ube Pandesal</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="productcontainer/wholewheatloaf.html">
+              <img src="css/img/whole-wheat-loaf.jpg" alt="whole wheat loaf bread">
+            </a>
+            <div class="desc" id="desc">Whole Wheat Loaf Bread</div>
+          </div>
+        </div>
+      </div>
+                  
+      <div class="clearfix"></div>
+
+      <div class="footer">
+        <p>COPYRIGHT © 2024 THE BEST PANDESAL IN THE PHILIPPINES. Pan de Special BY GROUP 13 ALL RIGHTS RESERVED.</p>
+      </div>
+
+      <script type="text/javascript" src="js/category.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>
